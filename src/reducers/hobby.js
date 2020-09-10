@@ -1,12 +1,12 @@
-// const initialState = {
-//   list: ["Listen to music"],
-//   selectedId: null,
-// };
+const initialState = {
+  list: [],
+  selectedId: null,
+};
 
-const hobbyReducer = (state, action) => {
+const hobbyReducer = (state = initialState, action) => {
   switch (action.type) {
     case "ADD_HOBBY": {
-      break;
+      return state;
 
       // return {
       //   ...state,
@@ -14,7 +14,7 @@ const hobbyReducer = (state, action) => {
       // };
     }
     case "SET_ACTIVE_HOBBY": {
-      break;
+      return state;
     }
     default:
       return state;
